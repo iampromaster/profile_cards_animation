@@ -1,0 +1,146 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgb(255, 64, 0), rgb(143, 51, 255));
+  background-size: cover;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+}
+
+.profile-card {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: rgba(196, 196, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 1em;
+  color: white;
+  border-radius: 1em;
+  margin: 0 -200px;
+  overflow: hidden;
+  transform: rotate(calc(var(--r) * 0.5deg));
+  cursor: pointer;
+  transition: 0.9s ease-in-out;
+}
+
+.container:hover .profile-card {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 5px 0;
+}
+.info p {
+  font-weight: 500;
+  font-size: 14px;
+}
+.socials {
+  margin: 15px 30px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.socials i {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.socials i:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-5px);
+}
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 10px 30px;
+}
+.btn-box button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid white;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn-box button:nth-of-type(2) {
+  background: transparent;
+  color: white;
+}
+.btn-box button:nth-of-type(2):hover {
+  background-color: white;
+  color: black;
+}
+.btn-box button:first-of-type:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  font-size: 16px;
+  margin: 20px 30px;
+}
+.stats-grid .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  font-weight: 500;
+  gap: 3px;
+}
+.stats-grid i {
+  font-size: 24px;
+}
+.stats-grid .row:first-of-type,
+.stats-grid .row:nth-of-type(2) {
+  border-right: 3px solid white;
+}
+
+hr {
+  border: none;
+  outline: none;
+  height: 3px;
+  background-color: white;
+  width: 100px;
+  border-radius: 1em;
+}
